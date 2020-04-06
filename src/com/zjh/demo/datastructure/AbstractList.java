@@ -1,6 +1,6 @@
-package com.mj;
+package com.zjh.demo.datastructure;
 
-public abstract class AbstractList<E> implements List<E>  {
+public abstract class AbstractList<E> implements List<E>{
 	/**
 	 * 元素的数量
 	 */
@@ -9,6 +9,7 @@ public abstract class AbstractList<E> implements List<E>  {
 	 * 元素的数量
 	 * @return
 	 */
+	@Override
 	public int size() {
 		return size;
 	}
@@ -17,6 +18,7 @@ public abstract class AbstractList<E> implements List<E>  {
 	 * 是否为空
 	 * @return
 	 */
+	@Override
 	public boolean isEmpty() {
 		 return size == 0;
 	}
@@ -26,6 +28,7 @@ public abstract class AbstractList<E> implements List<E>  {
 	 * @param element
 	 * @return
 	 */
+	@Override
 	public boolean contains(E element) {
 		return indexOf(element) != ELEMENT_NOT_FOUND;
 	}
@@ -34,6 +37,7 @@ public abstract class AbstractList<E> implements List<E>  {
 	 * 添加元素到尾部
 	 * @param element
 	 */
+	@Override
 	public void add(E element) {
 		add(size, element);
 	}
